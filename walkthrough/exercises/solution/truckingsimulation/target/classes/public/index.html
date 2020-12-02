@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>STEDI Login Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href= "favicon.ico" type="image/x-icon" />
+</head>
+<body>
+<div class="page-header">
+    <p><img src="stedi-logo-4000px-x-4000px.png" width="600" height="600" style="background-color:black;"/></p>
+</div>
+<div style="text-align:center">
+
+    <form name="loginForm" id="login" method="post" >
+        <p>
+            <label class="stepcount" for="login"><span>Test user: clinicmanager</span></label>
+            <input class="stepcount" type="text" id="un" name="username" size="25" onchange="setusername()" required >
+        </p>
+        <p>
+            <label class="stepcount" for="login"><span>Test password: Cl1n1cM@n@ger</span></span></label>
+            <input class="stepcount" type="password" id="pw" name="pwd" size="25" onchange="setuserpassword()" required >
+        </p>
+        <p>
+            <input class="btn btn-lg btn-primary" id="loginbtn" type="button" onclick="userlogin()" value="Login">
+        </p>
+        <p>
+            <a class="stepcount" id="newusr" href="/createnewuser.html">Create account</a>
+        </p>
+    </form>
+</div>
+<script src="jquery-3.1.1.min.js"></script>
+<script src="login.js"></script>
+<script src="manageuser.js"></script>
+
+</body>
+
+</html>

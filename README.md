@@ -1,55 +1,40 @@
-# README Template
+# Windows Users
+It is HIGHLY recommended to install the 10 October 2020 Update: https://support.microsoft.com/en-us/windows/get-the-windows-10-october-2020-update-7d20e88c-0568-483a-37bc-c3885390d212
 
-Below is a template provided for use when building your README file for students.
+You will then want to install the latest version of Docker on Windows: https://docs.docker.com/docker-for-windows/install/
 
-# Project Title
 
-Project description goes here.
 
-## Getting Started
+#  Using Docker for your Exercises
 
-Instructions for how to get a copy of the project running on your local machine.
+You will need to use Docker to run the exercises on your own computer. You can find Docker for your operating system here: https://docs.docker.com/get-docker/
 
-### Dependencies
+It is recommended that you configure Docker to allow it to use up to 2 cores and 6 GB of your host memory for use by the course workspace. If you are running other processes using Docker simultaneously with the workspace, you should take that into account also.
 
-```
-Examples here
-```
 
-### Installation
 
-Step by step explanation of how to get a dev environment running.
+The docker-compose file at the root of the repository creates 9 separate containers:
 
-List out the steps
+- Redis
+- Zookeeper (for Kafka)
+- Kafka
+- Banking Simulation
+- Trucking Simulation
+- STEDI (Application used in Final Project)
+- Kafka Connect with Redis Source Connector
+- Spark Master
+- Spark Worker
 
-```
-Give an example here test2
-```
+It also mounts your repository folder to the Spark Master and Spark Worker containers as a volume  `/home/workspace`, making your code changes instantly available within to the containers running Spark.
 
-## Testing
-
-Explain the steps needed to run any automated tests
-
-### Break Down Tests
-
-Explain what each test does and why
+Let's get these containers started!
 
 ```
-Examples here
+cd [repositoryfolder]
+docker-compose up
 ```
 
-## Project Instructions
-
-This section should contain all the student deliverables for this project.
-
-## Built With
-
-* [Item1](www.item1.com) - Description of item
-* [Item2](www.item2.com) - Description of item
-* [Item3](www.item3.com) - Description of item
-
-Include all items used to build project.
-
-## License
-
-[License](LICENSE.txt)
+You should see 9 containers when you run this command:
+```
+docker ps
+```

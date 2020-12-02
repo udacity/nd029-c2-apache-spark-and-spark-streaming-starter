@@ -1,0 +1,1 @@
+This folder is for Spark to use while running in the Docker container, as a temp folder to store jars.

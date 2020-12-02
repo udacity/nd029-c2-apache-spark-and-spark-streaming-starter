@@ -1,0 +1,1 @@
+This folder is for logging the output from the spark submit scripts.
