@@ -1,9 +1,0 @@
-Run the Redis CLI:
-From the terminal type: /data/redis/redis-stable/src/redis-cli -a notreally
-From the terminal type: keys **
-You will see the list of all the Redis tables
-From another terminal type /data/kafka/bin/kafka-console-consumer --bootstrap-server localhost:9092 --topic redis-server
-From the first terminal type: set mykey myvalue
-Open the second terminal
-A JSON message will appear from the redis-server topic
-Use: echo "encoded text" | base64 -d to decode
