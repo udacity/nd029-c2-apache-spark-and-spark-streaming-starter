@@ -16,7 +16,7 @@ Now that you have learned how to use `unbase64` to extract useful data, let's ta
 
 - Complete the current-country.py python script
 - Submit the application to the spark cluster:
-     - From the terminal, cd to the lesson-3-redis-base64-json/exercises/starter subfolder of the repository, then type: 
+     - From the terminal, cd to the final-exercise/exercises/starter subfolder of the repository, then type: 
 
     Mac/Linux/Unix:
      ```

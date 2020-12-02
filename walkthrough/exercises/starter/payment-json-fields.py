@@ -28,7 +28,7 @@ redisMessageSchema = StructType(
 
 #TO-DO: set the log level to WARN
 
-#TO-DO: read the redis-server kafka topic as a source into a streaming dataframe with the bootstrap server localhost:9092, configuring the stream to read the earliest messages possible                                    
+#TO-DO: read the redis-server kafka topic as a source into a streaming dataframe with the bootstrap server kafka:19092, configuring the stream to read the earliest messages possible                                    
 
 #TO-DO: using a select expression on the streaming dataframe, cast the key and the value columns from kafka as strings, and then select them
 

@@ -49,7 +49,7 @@ docker ps
 - From the terminal type: 
 
 ```
-docker exec -it nd029-c2-apache-spark-and-spark-streaming_spark_1 /opt/bitnami/spark/bin/spark-submit /home/workspace/lesson-1-streaming-dataframes/exercises/starter/hellospark.py
+docker exec -it nd029-c2-apache-spark-and-spark-streaming-starter_spark_1 /opt/bitnami/spark/bin/spark-submit /home/workspace/lesson-1-streaming-dataframes/exercises/starter/hellospark.py
 ```
 
 - This command is using docker exec to target the container running the Spark Master, executing the command `spark-submit`, and passing the path to hellospark.py within the mounted filesystem. 

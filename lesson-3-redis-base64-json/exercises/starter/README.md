@@ -1,4 +1,4 @@
-# Manually Save and Read with Redis and Kafka
+# Start a Spark Cluster
 
 Working with Redis, it is extremely important to know how to use the Redis Command Line Interface (redis-cli) command. This command allows you to directly interact with the Redis database, by creating, updating, or deleting data.
 Now that we have connected Redis with Kafka using the Kafka Connect Redis Source, we should verify that it is working correctly.

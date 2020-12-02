@@ -1,0 +1,5 @@
+Hello everyone this is the test text file we would like to parse
+for the Spark exercise.
+
+thanks,
+have a great weekend!
